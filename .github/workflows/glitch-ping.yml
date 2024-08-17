@@ -1,0 +1,16 @@
+name: Ping Glitch and Force Update
+
+on:
+  schedule:
+    - cron: '0 8 * * *' # 6 AM BRST, 8 AM UTC
+
+jobs:
+  ping_glitch:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Send request to Glitch site
+      run: |
+        curl -X GET https://sly-sunset-oxygen.glitch.me/
+        sleep 50
+        curl -X GET https://sly-sunset-oxygen.glitch.me/force-update-failed-players
