@@ -2,7 +2,8 @@ name: Ping Glitch and Force Update
 
 on:
   schedule:
-    - cron: '0 8 * * *' # 6 AM BRST, 8 AM UTC
+    - cron: '19 17 * * *' # 14:19 BRT, 17:19 UTC
+
 
 jobs:
   ping_glitch:
