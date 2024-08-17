@@ -2,8 +2,8 @@ name: Ping Glitch and Force Update
 
 on:
   schedule:
-    - cron: '22 16 * * *' # 16:22 UTC
-  workflow_dispatch: # Permite execução manual
+    - cron: '0 9 * * *' # 9:00 AM UTC, diariamente
+  workflow_dispatch: # Mantém a opção de execução manual
 
 jobs:
   ping_glitch:
